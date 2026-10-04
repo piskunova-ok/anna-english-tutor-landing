@@ -1,0 +1,56 @@
+# --- Зависимости и сборка ---
+node_modules/
+dist/
+build/
+.vite/
+*.local
+
+# --- Секреты, ключи, токены, пароли ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+service-account*.json
+.netrc
+.npmrc
+.netlify/
+
+# --- Локальные базы данных и рабочие данные ---
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sql
+dump.sql
+data/*.json
+!data/.gitkeep
+
+# --- Логи и кэши ---
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+coverage/
+.nyc_output/
+
+# --- Скриншоты и медиа (не публикуем) ---
+preview.png
+*.psd
+*.fig
+
+# --- Служебное / ОС / редакторы ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
